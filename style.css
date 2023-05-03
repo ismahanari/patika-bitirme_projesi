@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: aliceblue;
+    
+}
+body{
+    background-image: linear-gradient(pink,purple);
+}
+/*KUTU GENİŞLİKLERİ*/
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+/* SATIRLAR*/
+.row{
+    /*border: slateblue solid 2px;*/
+    background-color: rgb(131, 2, 66);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*SATIRLAR YAN YANA GELMESİN*/
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#k1{min-height: 60px;}
+#k2{min-height: 200px;}
+#k3{min-height: 200px;}
+#k4{min-height: 200px;}
+
+/* COL- YASLA*/
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    /*border: 1px solid rebeccapurple;*/
+    /*background-color: gray;*/
+    border-radius: 8px;
+}
+
+
+/*500 PX DEN DAHA KÜÇÜK EKRANLAR İÇİN */
+@media screen and (max-width: 500px){
+    [class*="col-*"]{width:50% ;}
+}
+
+div{
+    height: 180px;
+    background-color: rgb(131, 2, 66);
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+
+
+h1{
+    background-color: rgb(131, 2, 66);
+    height: 40px;
+    text-align: center;
+}
+h6{
+    background-color: rgb(131, 2, 66);
+    height: 40px;
+     
+}
+#h1{
+    height: 85px;
+    overflow: visible;
+}
+#h6{
+    margin-top: 30px;
+    height: 35px;overflow: visible;
+    text-align: right;
+    
+}
